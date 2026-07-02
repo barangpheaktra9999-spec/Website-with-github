@@ -1,4 +1,41 @@
+<<<<<<< HEAD
 body{
     width: 100%;
     height: auto;
 }
+=======
+  body { background: #f8f9fa; }
+
+        /* Carousel */
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* Product Card & Image Uniformity */
+        .card { transition: 0.3s; }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover; /* Ensures all images fill the box perfectly */
+        }
+
+        /* Footer */
+        footer {
+            background: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Utility */
+        span {
+            color: black;
+            font-weight: bold;
+            font-size: 12px;
+        }
+>>>>>>> 282cf34a4aa754aaa7c8b826253345287fa02ee7

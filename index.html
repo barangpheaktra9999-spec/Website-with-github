@@ -1,11 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khmer Galary</title>
+
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Khmer Galary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <section class="bg-body-tertiary py-3 border-bottom">
+            <div class="container">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active"><img src="./img/01.jpg" class="d-block w-100" alt="Slide 1" /></div>
+            <div class="carousel-item"><img src="./img/02.jpg" class="d-block w-100" alt="Slide 2" /></div>
+            <div class="carousel-item"><img src="./img/03.jpg" class="d-block w-100" alt="Slide 3" /></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-5">Latest Video</h2>
+        
+        <div class="row g-4 mb-4">
+            <h3>Birds</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/736x/03/53/0b/03530bd5456fee988877507035406122.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 1</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/8a/54/b0/8a54b039de8c26eccea1ed0123ccc10e.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 2</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/8e/88/de/8e88de14b423d8039f740e8645045a6a.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 3</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/ca/5c/e9/ca5ce946342736f9dc3798ef9f76dcdd.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 4</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+        <div class="row g-4">
+            <h3>Cats</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/12/39/e3/1239e3cc44dd3f152a8bcb881e239f4e.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 5</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/6c/ba/cf/6cbacf2c38e96a29b98253d7d1fc04f6.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 6</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/63/9d/57/639d57fafa6262296530077c828718c6.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 7</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/09/af/05/09af05fdfbb1c60b47dd2363c77ccc1a.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 8</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+        <div class="row g-4 pt-3">
+
+            <h3>Dogs</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/736x/da/e7/d6/dae7d6ab8e2abd3e74d776a5fd49a6cb.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 5</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/cc/f1/b7/ccf1b78a782dfe17c058f5e6c786b668.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 6</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/ba/90/2d/ba902dc1868d2fa58d1730e3ef2d693c.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 7</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/27/f2/9b/27f29bdbc239b2a17db1a092790040bb.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 8</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+
+        <div class="row g-4">
+            <!-- Cow -->
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/736x/a6/2c/ae/a62caece3dabc3660749cc39218266fd.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 5</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/736x/49/15/d1/4915d11ef3a6a8e2e1245fa46c16a8a2.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 6</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/736x/6c/4b/7d/6c4b7d361f28282df932920c4e992299.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 7</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/4c/7b/dd/4c7bdd05c4585f69f6f84a7509b99345.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 8</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+    </div>
+
+    <footer>© 2026 Khmer24 Demo Website</footer>
+
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
