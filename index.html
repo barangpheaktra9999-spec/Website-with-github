@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khmer Galary</title>
 
-    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
@@ -18,15 +18,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Home/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Products/index.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Categories/index.html">Categories</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">About</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
-                            <li><a class="dropdown-item" href="#">Help</a></li>
+                            <li><a class="dropdown-item" href="..//More/About/index.html">About</a></li>
+                            <li><a class="dropdown-item" href="..//More/Contact/index.html">Contact</a></li>
+                            <li><a class="dropdown-item" href="..//More/Help/index.html">Help</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -34,20 +34,22 @@
         </div>
     </nav>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
-        <section class="bg-body-tertiary py-3 border-bottom">
+    <div id="carouselExampleAutoplaying" class="carousel slide position-relative" data-bs-ride="carousel" data-bs-interval="2500">
+
+        <div class="carousel-search-overlay pt-5">
             <div class="container">
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-success" type="submit">Search</button>
                 </form>
             </div>
-        </section>
-        <div class="carousel-inner">
+        </div>
+
+        <div style="height: 450px;" class="carousel-inner ">
             
-            <div class="carousel-item active"><img src="./img/01.jpg" class="d-block w-100" alt="Slide 1" /></div>
-            <div class="carousel-item"><img src="./img/02.jpg" class="d-block w-100" alt="Slide 2" /></div>
-            <div class="carousel-item"><img src="./img/03.jpg" class="d-block w-100" alt="Slide 3" /></div>
+            <div class="carousel-item object-fit-cover active"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdfCsrECwsF3iAmdGycEOPZWlr7VYUpmcvKA09CzObUA&s=10" class="d-block w-100" alt="Slide 1" /></div>
+            <div class="carousel-item object-fit-cover active"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH69B342gyBbpzKIBhVZUyeGDAvKjyE4I6RpJyeO-_n90KWHmLHq7zl295&s=10" class="d-block w-100" alt="Slide 2" /></div>
+            <div class="carousel-item object-fit-cover active"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmndEK5Wxqa1NvTMa9olv09X3P6i8Xv0ow9ygm8jUYpmJZdGzEjQnlpBE&s=10" class="d-block w-100" alt="Slide 3" /></div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -57,7 +59,7 @@
         </button>
     </div>
 
-    <div class="container py-5">
+    <div class="container py-2">
         <h2 class="text-center mb-5">Latest Video</h2>
         
         <div class="row g-4 mb-4">
@@ -86,18 +88,82 @@
         </div>
 
 
-        <div class="row g-4">
-            <!-- Cow -->
+        <div class="row g-4 py-3">
+            <h3>Cows</h3>
             <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/736x/a6/2c/ae/a62caece3dabc3660749cc39218266fd.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 5</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
             <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/736x/49/15/d1/4915d11ef3a6a8e2e1245fa46c16a8a2.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 6</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
             <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/736x/6c/4b/7d/6c4b7d361f28282df932920c4e992299.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 7</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
             <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/1200x/4c/7b/dd/4c7bdd05c4585f69f6f84a7509b99345.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 8</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
         </div>
 
+        <div class="row g-4 py-3">
+            <h3>Mouses</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://www.rottler.com/wp-content/uploads/medow-mouse.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 9</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://americareservices.com/wp-content/uploads/2023/01/mouse-vs-rat-ac.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 10</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/article_thumbnails/BigBead/what_to_know_about_house_mice_bigbead/1800x1200_getty_rf_what_to_know_about_house_mice_bigbead.jpg?resize=750px:*&output-quality=75" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 11</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://nationalzoo.si.edu/sites/default/files/animals/perdido-key-beach-mouse-05-20180901_dsc3871cn.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 12</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+        <div class="row g-4 py-3">
+            <h3>Rabbits</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://rabbit.org/wp-content/uploads/2024/01/rew-keithus-4x6-Keithius-2725203756-gus_closeup-2008-08-02-pet-rabbit-bunny-houserabbit-1024x683.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 13</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 14</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://wildlifeaid.org.uk/wp-content/uploads/2024/12/rabbit-3.webp" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 15</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://m.media-amazon.com/images/I/619qVyLZ-NL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 16</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+        <div class="row g-4 py-3">
+            <h3>Pigs</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.natgeofe.com/k/0ed36c42-672a-425b-9e62-7cc946b98051/pig-fence_square.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 17</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://static.vecteezy.com/system/resources/thumbnails/055/521/571/small/adorable-piglet-influencer-with-stylish-bow-in-farm-background-showcasing-trendy-look-and-playful-expression-photo.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 18</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDCSapr8x6Y6P52dUQHgKa21VqhgJ6LH53yFL2GVua6aDBb7vEHALVwcYe&s=10" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 19</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://cdcssl.ibsrv.net/cimg/www.curatedcontent.smb/730x400_85/725/pet-pig-626725.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 20</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+        <div class="row g-4 py-3">
+            <h3>Pendas</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/236x/da/b8/9b/dab89b4f63f4d7f102018139b9458b1d.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 21</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/236x/49/aa/95/49aa9522d26db9455073aded7876a8b0.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 22</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/236x/be/5d/4b/be5d4bd896da83041280c925076b45af.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 23</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://i.pinimg.com/236x/3d/f1/59/3df15972bf7f4a785e2a4aba35fe874e.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 24</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+        <div class="row g-4 py-3">
+            <h3>Monkeys</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://scx2.b-cdn.net/gfx/news/hires/2025/macaque.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 25</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://static.vecteezy.com/system/resources/thumbnails/070/671/497/small/adorable-baby-monkey-portrait-sitting-on-grass-with-expressive-eyes-and-a-curious-gaze-photo.jpeg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 26</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://cdng.europosters.eu/pod_public/1300/169087.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 27</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://static.vecteezy.com/system/resources/thumbnails/055/100/423/small/adorable-baby-monkey-sitting-amongst-autumn-leaves-photo.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 28</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+        <div class="row g-4 py-3">
+            <h3>Parrots</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Scarlet_macaw_%28Ara_macao_macao%29_Yasuni.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 29</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTngY_oiqs5tInrALEK8Ejq6O8-GijFbPhsBL2y63ZaMmF8q2JbZ650nUk&s=10" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 30</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://scx2.b-cdn.net/gfx/news/hires/2020/parrot.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 31</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://cdn.britannica.com/80/3380-050-32801411/Budgerigar-Melopsittacus-undulatus-parakeet.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 32</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+        
+        <div class="row g-4 py-3">
+            <h3>Fishs</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://www.thesprucepets.com/thmb/Jg5byuBdix-TXtyLk4Xn575K3GE=/6078x0/filters:no_upscale():strip_icc()/low-maintenance-freshwater-fish-4770223-hero-ffb66c229c194e2db4916e88bbd17a15.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 33</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://spca.bc.ca/wp-content/uploads/fish-discus-swimming.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 34</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://www.cocodrilospark.com/wp-content/uploads/2024/11/fish-5294919_640-1.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 35</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://media-animals.earth.com/images/2022/08/17/2709417371243483/cyprinuscarpio_14195303217244448.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 36</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
+        <div class="row g-4 py-3">
+            <h3>Peacocks</h3>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://cdn.britannica.com/37/154237-050-A76A506D/blue-peafowl-tail-Indian-peacock-courtship-displays.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 37</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://wildambience.com/wp-content/uploads/2023/10/mstc_00829.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 38</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://www.trvst.world/wp-content/uploads/2023/07/peacock-on-grass.jpg" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 39</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+            <div class="col-lg-3 col-md-6"><div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyBH1Vpx9CUwE4h2ieK1n8mJvYQrgPz5XSuYuEMqz2kFgYlP6j82JbpYw9&s=10" class="card-img-top" alt="Image"><div class="card-body"><h5 class="card-title">Image 40</h5><p class="card-text">View <span>19.9k</span></p><button class="btn btn-primary w-100">Download</button></div></div></div>
+        </div>
+
     </div>
 
-    <footer>© 2026 Khmer24 Demo Website</footer>
+    <footer>@ 2026 Khmer24 Demo Website</footer>
 
-    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

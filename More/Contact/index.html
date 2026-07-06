@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Khmer Galary</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../Home/index.html">Khmer Galary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Home/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Products/index.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Categories/index.html">Categories</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../About/index.html">About</a></li>
+                            <li><a class="dropdown-item active" href="../Contact/index.html">Contact</a></li>
+                            <li><a class="dropdown-item" href="../Help/index.html">Help</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h2 class="text-center fw-bold mb-2">Contact Us</h2>
+        <p class="text-center text-muted mb-5">We'd love to hear from you</p>
+
+        <div class="row g-5">
+
+            <!-- Contact info -->
+            <div class="col-lg-4">
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <div class="contact-icon-box">@</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Email</h6>
+                        <p class="text-muted mb-0">support@khmergalary.demo</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <div class="contact-icon-box">☎</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Phone</h6>
+                        <p class="text-muted mb-0">+855 12 345 678</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <div class="contact-icon-box">📍</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Address</h6>
+                        <p class="text-muted mb-0">Phnom Penh, Cambodia</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start gap-3">
+                    <div class="contact-icon-box">🕒</div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Hours</h6>
+                        <p class="text-muted mb-0">Mon - Sat, 8:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact form -->
+            <div class="col-lg-8">
+                <div class="card p-4">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="Your name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="you@example.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-control" placeholder="How can we help?">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="Write your message..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="mt-5 rounded overflow-hidden">
+            <iframe
+                src="https://www.google.com/maps?q=Phnom%20Penh,Cambodia&output=embed"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>© 2026 Khmer24 Demo Website</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+

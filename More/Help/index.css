@@ -1,0 +1,8 @@
+.help-search {
+max-width: 600px;
+margin: 0 auto;
+}
+.accordion-button:not(.collapsed) {
+background-color: #e7f1ff;
+color: #0d6efd;
+}

@@ -1,15 +1,27 @@
-<<<<<<< HEAD
-body{
-    width: 100%;
-    height: auto;
-}
-=======
-  body { background: #f8f9fa; }
+        body{
+        width: 100%;
+        height: auto;
+        }
+        body { background: #f8f9fa; }
 
         /* Carousel */
         .carousel-item img {
             height: 500px;
             object-fit: cover;
+        }
+
+        /* Search overlay on top of carousel */
+        .carousel-search-overlay {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+
+        .carousel-search-overlay .form-control {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
         }
 
         /* Product Card & Image Uniformity */
@@ -38,4 +50,3 @@ body{
             font-weight: bold;
             font-size: 12px;
         }
->>>>>>> 282cf34a4aa754aaa7c8b826253345287fa02ee7
